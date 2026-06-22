@@ -1,4 +1,4 @@
-# GachaSimWeb
+# Astral Archive
 
 Next.js web frontend for the GachaSim project.
 
