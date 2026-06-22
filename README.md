@@ -1,17 +1,26 @@
-# Astral Archive Web
+# GachaSimWeb
 
-Next.js frontend for the GachaSim microservices.
+Next.js web frontend for the GachaSim project.
 
-## Start
+## Features
 
-1. Start the backend with `run_docker.bat`.
-2. In this folder, run:
+- Single and 10× gacha pulls
+- Inventory and pull history
+- Responsive interface
 
-```sh
+## Setup
+
+Start [GachaSimServer](https://github.com/ponlawat30109/GachaSimServer), then run:
+
+```bash
 npm install
-npm run dev
+npm run dev -- -p 3001
 ```
 
-Open `http://localhost:3001`.
+Open [http://localhost:3001](http://localhost:3001).
 
-Copy `.env.example` to `.env.local` if the API gateway uses a different URL.
+The API defaults to `http://localhost:3000`. To change it, create `.env.local`:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
